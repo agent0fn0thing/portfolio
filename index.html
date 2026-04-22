@@ -139,6 +139,55 @@
             transform: translateX(4px);
         }
 
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .interest-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            text-align: center;
+            animation: fadeIn 1s ease-out 0.5s both;
+        }
+
+        .interest-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        .interest-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--secondary-accent), var(--primary-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .interest-title {
+            font-size: 1.25rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .interest-description {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
         footer {
             text-align: center;
             padding: 4rem 2rem 2rem;
@@ -299,7 +348,7 @@
                 font-size: 3rem;
             }
 
-            .projects-grid {
+            .projects-grid, .interests-grid {
                 padding: 1rem;
             }
 
@@ -390,6 +439,33 @@
             </a>
         </article>
     </main>
+
+    <div class="section-title-wrapper">
+        <h2 class="section-title">My Interests</h2>
+    </div>
+
+    <section class="interests-grid">
+        <div class="interest-card" tabindex="0">
+            <div class="interest-icon">🧠</div>
+            <h3 class="interest-title">Machine Learning</h3>
+            <p class="interest-description">Exploring neural networks, predictive modeling, and AI applications in modern business.</p>
+        </div>
+        <div class="interest-card" tabindex="0">
+            <div class="interest-icon">📊</div>
+            <h3 class="interest-title">Data Visualization</h3>
+            <p class="interest-description">Creating compelling visual narratives to make complex datasets accessible and actionable.</p>
+        </div>
+        <div class="interest-card" tabindex="0">
+            <div class="interest-icon">🚀</div>
+            <h3 class="interest-title">Open Source</h3>
+            <p class="interest-description">Contributing to open-source projects and engaging with the broader developer community.</p>
+        </div>
+        <div class="interest-card" tabindex="0">
+            <div class="interest-icon">☕</div>
+            <h3 class="interest-title">Specialty Coffee</h3>
+            <p class="interest-description">Brewing the perfect pour-over and exploring beans from different origins.</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2026 Agent. Built with precision and modern web aesthetics.</p>
