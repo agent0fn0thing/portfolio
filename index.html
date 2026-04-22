@@ -188,6 +188,49 @@
             font-size: 0.95rem;
         }
 
+        .tech-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 0 auto 4rem auto;
+            padding: 0 2rem;
+            animation: fadeIn 1s ease-out 0.5s both;
+        }
+
+        .tech-pill {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 2rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+            cursor: default;
+        }
+
+        .tech-pill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(139, 92, 246, 0.4);
+            background: rgba(30, 41, 59, 0.9);
+        }
+
+        .tech-pill img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .tech-pill span {
+            color: white;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
         footer {
             text-align: center;
             padding: 4rem 2rem 2rem;
@@ -439,6 +482,49 @@
             </a>
         </article>
     </main>
+
+    <div class="section-title-wrapper">
+        <h2 class="section-title">Technologies & Tools</h2>
+    </div>
+
+    <div class="tech-container">
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy">
+            <span>Python</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="Power BI" loading="lazy">
+            <span>Power BI</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" loading="lazy">
+            <span>PostgreSQL</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/microsoftazure/0089D6" alt="Azure" loading="lazy">
+            <span>Azure</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" loading="lazy">
+            <span>Docker</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/tableau/E97627" alt="Tableau" loading="lazy">
+            <span>Tableau</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/snowflake/29B5E8" alt="Snowflake" loading="lazy">
+            <span>Snowflake</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="Apache Spark" loading="lazy">
+            <span>Spark</span>
+        </div>
+        <div class="tech-pill" tabindex="0">
+            <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy">
+            <span>Git</span>
+        </div>
+    </div>
 
     <div class="section-title-wrapper">
         <h2 class="section-title">My Interests</h2>
